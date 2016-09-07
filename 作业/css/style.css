@@ -1,0 +1,75 @@
+body{
+margin: 6px;
+background-color: #333333;
+color: #fff;
+/*text-align: center;*/
+}
+section{
+  border-style: solid;
+  border-color: #3a9fb7;
+  border-width: 5px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.main{
+  margin: 6px 0;
+  background-color: #ff1100;
+  height: 140px;
+  text-align: center;
+}
+.touxiang {
+    width: 70px;
+    border-radius: 50%;
+    margin-top: 8%;
+}
+.resume{
+  border-style: solid;
+  border-color: #3a9fb7;
+  border-width: 5px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.image{
+  margin-left: 21%;
+}
+.school{
+  margin-top: 10px;
+  border-style: solid;
+  border-color: #3a9fb7;
+  border-width: 5px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.schoolbadge{
+  margin-left: 77%;
+  margin-top: -69px;
+  border-radius: 50%;
+  width: 20%;
+}
+.schoolimg1{
+  width: 49%;
+  height: 300px;
+}
+.schoolimg2{
+  width: 100%;
+}
+.skills{
+  border-style: solid;
+  border-color: #3a9fb7;
+  border-width: 5px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+nav a{
+   display: inline-block;
+    background-color: #33ff00;
+    height: 17px;
+    width: 74px;
+    margin-left: 3px;
+    margin-top: 4px;
+    text-align: center;
+    text-decoration: none;
+}
+li{
+  font-size: 20px;
+}
