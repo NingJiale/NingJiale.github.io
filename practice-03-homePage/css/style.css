@@ -61,7 +61,7 @@ main img {
 .content {
     position: absolute;
     width: 220px;
-    left: 43%;
+    right: 10%;
     top: 181px;
     display: flex;
     justify-content: space-between;
