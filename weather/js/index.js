@@ -20,11 +20,11 @@ function getCityCode(aName) {
         },
         dataType: 'json',
         success: function(res) {
-          if (errNum==0) {
+          if (res.errNum==0) {
             cityCode = res.retData["cityCode"];
             getWeather(cityCode, aName);
           }else {
-            alert(errMsg);
+            alert(res.errMsg);
           }
 
         },
