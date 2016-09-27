@@ -1,0 +1,33 @@
+body{
+  background-color: #e7fad2;
+}
+* {
+    text-align: center;
+    /*box-sizing: border-box;*/
+}
+
+th {
+    text-align: center;
+}
+
+tr:nth-child(6) {
+    background-color: #cb748b;
+}
+
+#search {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#btn {
+    height: 4rem;
+    width: 8rem;
+    font-size: 1.5rem;
+    margin-top:-6px;
+}
+
+input {
+    height: 4rem;
+    width: 46rem;
+    font-size: 2rem;
+}
