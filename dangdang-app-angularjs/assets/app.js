@@ -10,7 +10,7 @@ app.config(['$routeProvider',function($routeProvider){
     controller:''
   })
   .when('/book',{
-    templateUrl:'./assets/tpl/bool.html',
+    templateUrl:'./assets/tpl/book.html',
     controller:'bookController'
   })
   .when('/about_me',{
