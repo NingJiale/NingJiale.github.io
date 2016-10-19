@@ -1,5 +1,5 @@
 // 创建一个公用数据调用服务
-app.factiry('commonService',['$http',function($http){
+app.factory('commonService',['$http',function($http){
   var service = {};
   /**
    * 根据分类信息读取数据
