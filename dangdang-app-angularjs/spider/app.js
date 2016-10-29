@@ -35,7 +35,7 @@ function loadData(id, base_url, page_count) {
                     var obj = {};
                     obj.img = $(li).find('.goods-inner .goods-slide .goods-image a img').attr('src');
                     obj.title = $(li).find('.goods-inner h4 a').attr('title').trim();
-                    obj.author = $(li).find('.goods-countdown-info span').eq(0).text().toString();
+                    obj.author = $(li).find('.goods-countdown-info span').eq(0).text();
                     obj.publister = $(li).find('.goods-info em span').eq(1).text();
                     obj.publist_time = $(li).find('.goods-info del').text();
                     obj.link = $(li).find('.goods-inner .goods-slide .goods-image a').attr('href');
