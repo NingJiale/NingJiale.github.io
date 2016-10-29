@@ -9,9 +9,7 @@ var clothesType = common.clothesType;
 // 网络爬虫
 var crawler = require('crawler');
 var c = new crawler({
-    maxConnections: 10,
-    forceUTF8: true,
-    incomingEncoding: 'gb2312'
+    maxConnections: 10
 });
 
 clothesType.forEach(function(item) {
