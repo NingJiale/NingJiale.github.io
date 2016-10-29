@@ -3,7 +3,7 @@ var app = express();
 var url =require('url');
 var fs =require('fs');
 var common = require('./common');
-var bookType = common.bookType;
+var clothesType = common.clothesType;
 
 
 // 网络爬虫
@@ -14,12 +14,8 @@ var c = new crawler({
     incomingEncoding: 'gb2312'
 });
 
+clothesType.forEach(function(item) {
 
-bookType.forEach(function(item) {
-    // console.log(item.id);
-    // console.log(item.base_url);
-    // console.log(item.page_count);
-    // console.log(item.name);
     loadData(item.id, item.base_url, item.page_count);
 
 
@@ -33,32 +29,28 @@ function loadData(id, base_url, page_count) {
     function getData(url, count) {
 
         c.queue([{
-            uri: url + count,
+            uri: 'http://category.vip.com/search-5-0-'+count+url,
             callback: function(error, result, $) {
-                // console.log(result.uri);
-                $('.bang_list li').each(function(index, li) {
+                $('#J_searchCatList .goods-list-item').each(function(index, li) {
                     var obj = {};
-                    obj.img = $(li).find('.pic a img').attr('src').trim();
-                    obj.title = $(li).find('.name').text();
-                    obj.author = $(li).find('.publisher_info').eq(0).text();
-                    obj.publister = $(li).find('.publisher_info').eq(1).find('a').text();
-                    obj.publist_time = $(li).find('.publisher_info').eq(1).find('span').text();
-                    obj.link = $(li).find('.pic a').attr('href');
-                    obj.price = $(li).find('.price .price_n').text();
+                    obj.img = $(li).find('.goods-inner .goods-slide .goods-image a img').attr('src');
+                    obj.title = $(li).find('.goods-inner h4 a').attr('title').trim();
+                    obj.author = $(li).find('.goods-countdown-info span').eq(0).text().toString();
+                    obj.publister = $(li).find('.goods-info em span').eq(1).text();
+                    obj.publist_time = $(li).find('.goods-info del').text();
+                    obj.link = $(li).find('.goods-inner .goods-slide .goods-image a').attr('href');
+                    obj.price = $(li).find('.goods-info .goods-discount').text();
                     arr.push(obj);
                 });
                 if(count<=page_count){
                   getData(url,count+1);
                 }else{
-                  // console.log(arr);
-                  fs.writeFileSync(`./data/book_${id}.json`,JSON.stringify(arr));
+                  console.log(arr);
+                  fs.writeFileSync(`../data/${id}.json`,JSON.stringify(arr));
                   console.log('获取数据成功');
                 }
             }
-
         }]);
-
-
     }
 }
 

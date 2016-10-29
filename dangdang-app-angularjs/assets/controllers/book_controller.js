@@ -1,8 +1,8 @@
 app.controller('bookController',['$scope',function($scope){
   $scope.bookTypes=[
-    {id:'ertong',name:'儿童',img:'./assets/images/book_ertong.jpg',description:'儿童书籍大全'},
-    {id:'lishi',name:'历史',img:'./assets/images/book_lishi.jpg',description:'历史书籍大全'},
-    {id:'dongman',name:'动漫',img:'./assets/images/book_dongman.jpg',description:'动漫书籍大全'},
-    {id:'qingchunwenxue',name:'青春文学',img:'./assets/images/book_qingchunwenxue.jpg',description:'青春文学书籍大全'}
+    {id:'weiyi',name:'卫衣',img:'./assets/images/weiyi.jpg',description:'潮流男上装之潮流卫衣'},
+    {id:'waitao',name:'外套',img:'./assets/images/waitao.jpg',description:'潮流男上装之潮流外套'},
+    {id:'yurongfu',name:'羽绒服',img:'./assets/images/yurongfu.jpg',description:'潮流男上装之潮流羽绒服'},
+    {id:'fengyi',name:'风衣',img:'./assets/images/fengyi.jpg',description:'潮流男上装之潮流风衣'}
   ]
 }])

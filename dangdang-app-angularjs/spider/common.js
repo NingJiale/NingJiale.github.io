@@ -7,28 +7,28 @@
  * page_count: 获取数据的页数
  * @type {Array}
  */
-const bookType =[{
-  id:"ertong",
-  name:"儿童",
-  base_url:"http://bang.dangdang.com/books/newhotsales/01.41.00.00.00.00-24hours-0-0-1-",
+const clothesType =[{
+  id:"weiyi",
+  name:"卫衣",
+  base_url:".html?q=3|29974||&rp=30073|30079#catPerPos",
   page_count:3,
 },{
-  id:"dongman",
-  name:"动漫",
-  base_url:"http://bang.dangdang.com/books/newhotsales/01.09.00.00.00.00-24hours-0-0-1-",
+  id:"waitao",
+  name:"外套",
+  base_url:".html?q=3|29977||&rp=30073|30079",
   page_count:3,
 },{
-  id:"lishi",
-  name:"历史",
-  base_url:"http://bang.dangdang.com/books/newhotsales/01.36.00.00.00.00-24hours-0-0-1-",
+  id:"yurongfu",
+  name:"羽绒服",
+  base_url:".html?q=3|29975||&rp=30073|30079",
   page_count:3,
 },{
-  id:"qingchunwenxue",
-  name:"青春文学",
-  base_url:"http://bang.dangdang.com/books/newhotsales/01.01.00.00.00.00-24hours-0-0-1-",
+  id:"fengyi",
+  name:"风衣",
+  base_url:".html?q=3|29674||&rp=30073|30079",
   page_count:3,
 }
 ];
 module.exports={
-  bookType:bookType
+  clothesType:clothesType
 };
